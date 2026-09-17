@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "QF-REP-.####",
+ "creation": "2026-09-17 10:25:29.130728",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "costomer",
+  "device",
+  "technician",
+  "problem_description",
+  "diagnosis",
+  "received_date",
+  "expected_delivery_date",
+  "status",
+  "parts_used",
+  "parts_total",
+  "service_charges",
+  "grand_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "costomer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Costomer",
+   "options": "Costomer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "device",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Device",
+   "options": "Device",
+   "reqd": 1
+  },
+  {
+   "fieldname": "technician",
+   "fieldtype": "Link",
+   "label": "Technician",
+   "options": "Technician"
+  },
+  {
+   "fieldname": "problem_description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Problem Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "diagnosis",
+   "fieldtype": "Small Text",
+   "label": "Diagnosis"
+  },
+  {
+   "default": "Today",
+   "fieldname": "received_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Received Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expected_delivery_date",
+   "fieldtype": "Date",
+   "label": "Expected Delivery Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Received\nDiagnosing\nRepairing\nReady\nDelivered",
+   "reqd": 1
+  },
+  {
+   "fieldname": "parts_used",
+   "fieldtype": "Table",
+   "label": "Parts Used",
+   "options": "Repair Part"
+  },
+  {
+   "fieldname": "parts_total",
+   "fieldtype": "Currency",
+   "label": "Parts Total",
+   "options": "Read only"
+  },
+  {
+   "fieldname": "service_charges",
+   "fieldtype": "Currency",
+   "label": "Service Charges"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "options": "Read only"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-17 11:24:29.501600",
+ "modified_by": "Administrator",
+ "module": "Quickfix",
+ "name": "Repair Job",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

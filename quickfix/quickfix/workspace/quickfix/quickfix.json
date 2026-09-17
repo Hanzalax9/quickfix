@@ -1,0 +1,157 @@
+{
+ "charts": [
+  {
+   "chart_name": "Repair Jobs By Status",
+   "label": "Repair Jobs By Status"
+  }
+ ],
+ "content": "[{\"id\": \"quickfix_header\", \"type\": \"header\", \"data\": {\"text\": \"QuickFix\", \"col\": 12}}, {\"id\": \"total_repairs\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Total Repair Jobs\", \"col\": 4}}, {\"id\": \"repair_status_chart\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Repair Jobs By Status\", \"col\": 8}}, {\"id\": \"navigation_header\", \"type\": \"header\", \"data\": {\"text\": \"Repair Management\", \"col\": 12}}, {\"id\": \"customers_shortcut\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Customers\", \"col\": 3}}, {\"id\": \"devices_shortcut\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Devices\", \"col\": 3}}, {\"id\": \"repair_jobs_shortcut\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Repair Jobs\", \"col\": 3}}, {\"id\": \"technicians_shortcut\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Technicians\", \"col\": 3}}, {\"id\": \"parts_shortcut\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Parts\", \"col\": 3}}, {\"id\": \"repair_report_shortcut\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Repair job report\", \"col\": 3}}, {\"id\": \"recent_repair_jobs\", \"type\": \"quick_list\", \"data\": {\"quick_list_name\": \"Recent Repair Jobs\", \"col\": 12}}]",
+ "creation": "2026-09-17 13:10:53.106855",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "QuickFix",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Repair Management",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customers",
+   "link_count": 0,
+   "link_to": "Costomer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Devices",
+   "link_count": 0,
+   "link_to": "Device",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Repair Jobs",
+   "link_count": 0,
+   "link_to": "Repair Job",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Technicians",
+   "link_count": 0,
+   "link_to": "Technician",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Parts",
+   "link_count": 0,
+   "link_to": "Part",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Repair Job Report",
+   "link_count": 0,
+   "link_to": "Repair Job Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "report_ref_doctype": "Repair Job",
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-09-17 14:19:08.774460",
+ "modified_by": "Administrator",
+ "module": "Quickfix",
+ "name": "QuickFix",
+ "number_cards": [
+  {
+   "label": "Total Repair Jobs",
+   "number_card_name": "Total Repair Jobs"
+  }
+ ],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Repair Job",
+   "label": "Recent Repair Jobs"
+  }
+ ],
+ "roles": [
+  {
+   "role": "Repair Manager"
+  },
+  {
+   "role": "Repair Technician"
+  }
+ ],
+ "sequence_id": 0.0,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Customers",
+   "link_to": "Costomer",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Repair Jobs",
+   "link_to": "Repair Job",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Technicians",
+   "link_to": "Technician",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Parts",
+   "link_to": "Part",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Repair job report",
+   "link_to": "Repair Job Report",
+   "report_ref_doctype": "Repair Job",
+   "type": "Report"
+  },
+  {
+   "doc_view": "List",
+   "label": "Devices",
+   "link_to": "Device",
+   "type": "DocType"
+  }
+ ],
+ "title": "QuickFix"
+}
