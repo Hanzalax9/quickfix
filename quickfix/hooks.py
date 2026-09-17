@@ -253,3 +253,33 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+# Fixtures
+# --------
+# Export database configuration required by QuickFix
+
+fixtures = [
+    {
+        "dt": "Workflow",
+        "filters": [["name", "=", "Repair Job Workflow"]]
+    },
+    {
+        "dt": "Notification",
+        "filters": [["name", "=", "Repair Job Ready Notification"]]
+    },
+    {
+        "dt": "Number Card",
+        "filters": [["name", "=", "Total Repair Jobs"]]
+    },
+    {
+        "dt": "Dashboard Chart",
+        "filters": [["name", "=", "Repair Jobs By Status"]]
+    },
+    {
+        "dt": "Role",
+        "filters": [["name", "in", ["Repair Manager", "Repair Technician"]]]
+    },
+    {
+        "dt": "Custom DocPerm",
+        "filters": [["role", "in", ["Repair Manager", "Repair Technician"]]]
+    }
+]
